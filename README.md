@@ -3,7 +3,7 @@ Native Language Benchmark in Numerous Algorithms
 
 ## Eight Queens Problem
 
-| Time | C | Rust |
+| Name | C | Rust |
 |-|-|-|
-| | 561ms | 583ms |
+| Time | 561ms | 583ms |
 
