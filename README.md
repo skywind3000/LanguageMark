@@ -5,7 +5,7 @@ Native Language Benchmark in Numerous Algorithms
 
 | Name | C | Rust |
 |-|-|-|
-| Recursion | 583ms | 645ms |
-| Non-Recursion | 561ms | 583ms |
+| Recursion | 579ms | 648ms |
+| Non-Recursion | 637ms | 667ms |
 
 
