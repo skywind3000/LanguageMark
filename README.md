@@ -8,4 +8,4 @@ Native Language Benchmark in Numerous Algorithms
 | Recursion | 571ms | 648ms | 13% |
 | Non-Recursion | 635ms | 667ms | 5% |
 
-
+Compiled with clang-9 and rustc 1.42.
