@@ -5,7 +5,7 @@ Native Language Benchmark in Numerous Algorithms
 
 | Name | C | Rust | Gap |
 |-|-|-|-|
-| Recursion | 579ms | 648ms | 12% |
-| Non-Recursion | 637ms | 667ms | 5% |
+| Recursion | 571ms | 648ms | 12% |
+| Non-Recursion | 635ms | 667ms | 5% |
 
 
