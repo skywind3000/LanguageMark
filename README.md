@@ -7,3 +7,4 @@ Native Language Benchmark in Numerous Algorithms
 |-|-|-|
 | Time | 561ms | 583ms |
 
+
