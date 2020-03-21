@@ -48,32 +48,22 @@ func check(q *[N]int, row int) int {
 	return 1
 }
 
-func queen() int {
-	var q [N]int
+func search(q *[N]int, row int) int {
 	found := 0
-	row := 0
-	done := 0
-
-	for done == 0 {
-		if check(&q, row) > 0 {
-			if row == N-1 {
+	for i := 0; i < N; i++ {
+		q[row] = i
+		if check(q, row) > 0 {
+			if row == N - 1 {
 				found++
 			} else {
-				row++
-				q[row] = 0
-				continue
-			}
-		}
-		q[row] += 1
-		for q[row] >= N {
-			row--
-			if row >= 0 {
-				q[row]++
-			} else {
-				done = 1
-				break
+				found += search(q, row + 1)
 			}
 		}
 	}
 	return found
+}
+
+func queen() int {
+	var q [N]int
+	return search(&q, 0)
 }
