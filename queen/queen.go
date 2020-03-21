@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"log"
+	"fmt"
 	"time"
 )
 
@@ -24,7 +24,7 @@ func main() {
 	queen()
 	ts := time.Now()
 	found := queen()
-	log.Printf("found=%v, time=%v\n", found, time.Now().Sub(ts))
+	fmt.Printf("found=%v, time=%v\n", found, time.Now().Sub(ts))
 }
 
 const N = 13
