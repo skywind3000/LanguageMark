@@ -32,13 +32,12 @@ fn array_check(array: &[i32], row: i32) -> bool
 }
 
 
-fn queen() -> i32 
-{
+fn queen() -> i32 {
     let mut array = [0;N as usize];
     let mut found = 0;
     let mut row = 0;
     let mut done = false;
-    while done == false {
+    while ! done {
         if array_check(&array, row) {
             if row == N - 1 {
                 found += 1;
@@ -62,8 +61,7 @@ fn queen() -> i32
     return found;
 }
 
-fn main()
-{
+fn main() {
     queen();
     let ts = clock_realtime();
     let found = queen();
